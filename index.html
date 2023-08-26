@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto GC</title>
+    <title>Proyecto GC | Home</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href=" https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/zephyr/bootstrap.min.css " rel="stylesheet" />
+    <link rel="stylesheet" href="css/iframe.css" />
     <script src="https://kit.fontawesome.com/cb9a8cdf3e.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="wrapper d-flex flex-column">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
       <div class="container-fluid">
@@ -28,25 +31,25 @@
         <div class="collapse navbar-collapse" id="navbarColor03">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#"
+              <a class="nav-link fs-6 active" href="#"
                 >Home
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/quienessomos.html">Quiénes Somos</a>
+              <a class="nav-link fs-6" href="html/quienessomos.html">Quiénes Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/proyecto.html">Proyecto</a>
+              <a class="nav-link fs-6" href="html/proyecto.html">Proyecto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/actividades.html">Actividades</a>
+              <a class="nav-link fs-6" href="html/actividades.html">Actividades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/colaborar.html">Colaborar</a>
+              <a class="nav-link fs-6" href="html/colaborar.html">Colaborar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/inscripciones.html">Inscripciones</a>
+              <a class="nav-link fs-6" href="html/inscripciones.html">Inscripciones</a>
             </li>
           </ul>
         </div>
@@ -63,7 +66,52 @@
         </div>
       </div>
     </nav>
-
+    <!-- Main -->
+    <main class="flex-grow-1 " style="min-height: 80vh;">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <div class="text-container text-center">
+              <h1 class="display-1 text-info mb-4">Proyecto GC</h1>
+              <p class="text-primary-emphasis fs-5">GC es una organización sin fines de lucro que trabaja para <strong>mejorar calidad de vida y educativa de niños, niñas y adolescentes en la ciudad de González Catán, </strong>
+                articulando los siguientes tres ejes: </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 mb-4">
+          <div class="col-md-4">
+            <div class="image-container text-center">
+              <img src="assets/imgs/wireframe-06.svg" alt="Conocimiento" class="img-fluid">
+              <h3 class="text-success-emphasis">Conocimiento</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="image-container text-center">
+              <img src="assets/imgs/wireframe-07.svg" alt="Crecimiento" class="img-fluid">
+              <h3 class="text-success-emphasis">Crecimiento</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="image-container text-center">
+              <img src="assets/imgs/wireframe-08.svg" alt="Compañerismo" class="img-fluid">
+              <h3 class="text-success-emphasis">Compañerismo</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/home.png" alt="Proyecto GC" class="img-fluid vw-100">
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4 mb-4">
+          <div class="col-md-12">
+            <div class="responsive-iframe-container">
+              <iframe src="https://www.youtube.com/embed/4a1-2oGlvHI?si=SW8V-5uGUtXYuudI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </main>
     <!-- Footer -->
     <footer class="bg-info text-white text-center p-4">
       <div class="container">
@@ -86,6 +134,7 @@
         </div>
       </div>
     </footer>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
