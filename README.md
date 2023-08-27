@@ -17,6 +17,6 @@ Inicialmente, se creó el repositorio del proyecto, el cuál fue dividido en dis
 
 Una vez concluido el desarrollo del sitio, se eliminaron las ramas "feature" y se realizó un PR para integrar la rama de desarrollo a la rama principal.
 
-Para finalizar, se generó un release v1.0 y se desplego el sitio mediante Github Pages.
+Para finalizar, se generó un release v1.0 y se desplegó el sitio en Github Pages.
 
 
