@@ -3,11 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "carousel",
     autoplay: 3000,
     animationDuration: 500,
-    // Otras opciones de configuración aquí
-    perView: 1, // Mostrar un solo elemento a la vez
-    focusAt: "center", // Asegura que el carrusel esté centrado
+    perView: 1,
+    focusAt: "center",
     navigation: {
-      bullets: ".glide__bullet", // Selector de los indicadores
+      bullets: ".glide__bullet",
     },
   }).mount();
 });
