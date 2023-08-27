@@ -79,23 +79,74 @@
       <!-- Main -->
       <main class="container mt-4 mb-4">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 p-4">
             <div class="mb-4">
-              <h2 class="text-success">Se parte</h2>
-              <h3 class="text-info">Voluntariado</h3>
-              <p><strong>¿Te gustaría sumarte a nuestro equipo de voluntarios?</strong></p>
-              <p>Para colaborar con esta gran causa como voluntario escribinos a info@proyectogc.org</p>
-              <h3 class="text-info">Donaciones</h3>
-              <p>
-                Tu aporte es importante para seguir generando impacto en la vida de todos los niños que participan del
-                Proyecto GC. Podes sumarte como Padrino becando a un niño.
-              </p>
+              <h1 class="text-success mb-4">Se parte</h1>
+              <div class="mb-4">
+                <h3 class="text-info">Voluntariado</h3>
+                <p><strong>¿Te gustaría sumarte a nuestro equipo de voluntarios?</strong></p>
+                <p>
+                  Para colaborar con esta gran causa como voluntario escribinos a
+                  <a href="mailto:info@proyectogc.org">info@proyectogc.org</a>
+                </p>
+              </div>
+              <div class="mb-4">
+                <h3 class="text-info">Donaciones</h3>
+                <p>
+                  Tu aporte es importante para seguir generando impacto en la vida de todos los niños que participan del
+                  Proyecto GC. Podes sumarte como Padrino becando a un niño.
+                </p>
+              </div>
             </div>
-            <form>
-              <h3 class="text-success">Quiero donar</h3>
+            <form id="inscripcion">
+              <p><strong>Dejanos tus datos y nos pondremos en contacto:</strong></p>
+              <fieldset>
+                <div class="form-group">
+                  <label for="nombre" class="form-label mt-4">Nombre (*)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Nombre"
+                    pattern="/^.{3,}$/"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="Email" class="form-label mt-4">Email (*)</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="Email"
+                    name="Email"
+                    aria-describedby="emailHelp"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="telefono" class="form-label mt-4">Número de teléfono (8 dígitos sin el 011) (*)</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Teléfono"
+                    pattern="\d{8}"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mensaje" class="form-label mt-4">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="3" style="resize: none"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success mt-4">Enviar</button>
+              </fieldset>
+              <p class="mt-4">(*) campos obligatorios</p>
             </form>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 p-4 d-flex align-items-center justify-content-center">
             <img src="../assets/imgs/voluntarios.jpg" alt="Voluntarios" class="img-fluid" />
           </div>
         </div>
