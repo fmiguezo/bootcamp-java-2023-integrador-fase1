@@ -103,7 +103,7 @@
                 <img src="../assets/imgs/gc.png" alt="Logo 2" class="img-fluid" style="max-width: 150px" />
               </div>
               <!-- Campos del formulario (agregar validaciones)-->
-              <form>
+              <form id="inscripcion">
                 <fieldset>
                   <div class="form-group">
                     <label for="nombrePadreMadreTutor" class="form-label mt-4">Nombre Padre/Madre o Tutor</label>
@@ -111,31 +111,49 @@
                       type="text"
                       class="form-control"
                       id="nombrePadreMadreTutor"
+                      name="nombrePadreMadreTutor"
                       placeholder="Nombre y Apellido (Padre/Madre o Tutor)"
+                      pattern="/^.{3,}$/"
                     />
                   </div>
                   <div class="form-group">
                     <label for="nombreAlumno" class="form-label mt-4">Nombre Alumno</label>
-                    <input type="text" class="form-control" id="nombreAlumno" placeholder="Nombre Alumno" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombreAlumno"
+                      name="nombreAlumno"
+                      placeholder="Nombre Alumno"
+                      pattern="/^.{3,}$/"
+                    />
                   </div>
                   <div class="form-group">
-                    <label for="Email" class="form-label mt-4">Email</label>
+                    <label for="Email" class="form-label mt-4">Email (*)</label>
                     <input
                       type="email"
                       class="form-control"
                       id="Email"
+                      name="Email"
                       aria-describedby="emailHelp"
-                      placeholder="Email *"
+                      placeholder="Email"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="telefono" class="form-label mt-4">Número de teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono *" required />
+                    <label for="telefono" class="form-label mt-4">Número de teléfono (8 dígitos sin el 011) (*)</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefono"
+                      name="telefono"
+                      placeholder="Teléfono"
+                      pattern="\d{8}"
+                      required
+                    />
                   </div>
                   <div class="form-group">
                     <label for="turno" class="form-label mt-4">Turno</label>
-                    <select class="form-select" id="turno">
+                    <select class="form-select" id="turno" name="turno" required>
                       <option value="" disabled selected>Seleccionar turno</option>
                       <option value="manana">Mañana</option>
                       <option value="tarde">Tarde</option>
@@ -143,10 +161,11 @@
                   </div>
                   <div class="form-group">
                     <label for="mensaje" class="form-label mt-4">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="3" style="resize: none"></textarea>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3" style="resize: none"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary mt-4">Enviar</button>
                 </fieldset>
+                <p class="mt-4">(*) campos obligatorios</p>
               </form>
             </div>
           </div>
