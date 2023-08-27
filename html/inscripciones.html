@@ -3,94 +3,203 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto GC</title>
+    <title>Proyecto GC | Inscripciones</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link href=" https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/zephyr/bootstrap.min.css " rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cb9a8cdf3e.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
-      <div class="container-fluid">
-        <a class="navbar-brand"
-          ><img src="../assets/imgs/logoGC.png" alt="Logo GC" style="max-height: 80px; width: auto"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarColor03"
-          aria-controls="navbarColor03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor03">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="../index.html"
-                >Home
-                <span class="visually-hidden">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quienessomos.html">Quiénes Somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="proyecto.html">Proyecto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="actividades.html">Actividades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="colaborar.html">Colaborar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Inscripciones<span class="visually-hidden">(current)</span></a>
-            </li>
-          </ul>
-        </div>
-        <img src="../assets/imgs/logoGC_slogan.webp" alt="Slogan" style="margin-right: 10px" />
-        <div class="d-flex align-items-center">
-          <a href="https://www.facebook.com/proyectogc.ong" target="_blank">
-            <img
-              src="../assets/imgs/facebook_icon.png"
-              alt="Facebook"
-              style="max-height: 50px; width: auto; margin-right: 10px"
-            />
-          </a>
-          <a href="https://www.instagram.com/proyecto.gc/" target="_blank">
-            <img
-              src="../assets/imgs/instagram_icon.png"
-              alt="Instagram"
-              style="max-height: 45px; width: auto; margin-right: 10px"
-            />
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Footer -->
-    <footer class="bg-info text-white text-center p-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p><strong>Información de Contacto</strong></p>
-            <p>Dirección: Manzoni 1360, Gonzalez Catán Provincia de Buenos Aires</p>
-            <p>Teléfono: (54) 5277-0815</p>
-            <p>Email: info@proyectogc.org</p>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="wrapper d-flex flex-column">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <div class="container-fluid">
+          <a class="navbar-brand"
+            ><img src="../assets/imgs/logoGC.png" alt="Logo GC" style="max-height: 80px; width: auto"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link fs-6 active" href="../index.html"
+                  >Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="quienessomos.html">Quiénes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="proyecto.html">Proyecto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="colaborar.html">Colaborar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6 active" href="#">Inscripciones<span class="visually-hidden">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+          <img src="../assets/imgs/logoGC_slogan.webp" alt="Slogan" style="margin-right: 10px" />
+          <div class="d-flex align-items-center">
             <a href="https://www.facebook.com/proyectogc.ong" target="_blank">
-              <i class="fab fa-facebook fa-xl" style="color: #ffffff; margin-right: 10px"></i>
+              <img
+                src="../assets/imgs/facebook_icon.png"
+                alt="Facebook"
+                style="max-height: 50px; width: auto; margin-right: 10px"
+              />
             </a>
             <a href="https://www.instagram.com/proyecto.gc/" target="_blank">
-              <i class="fab fa-instagram fa-xl" style="color: #ffffff"></i>
+              <img
+                src="../assets/imgs/instagram_icon.png"
+                alt="Instagram"
+                style="max-height: 45px; width: auto; margin-right: 10px"
+              />
             </a>
           </div>
-          <div class="col-md-6">
-            <img src="../assets/imgs/gc.png" alt="Logo footer" style="max-height: 150px; width: auto" />
+        </div>
+      </nav>
+      <!-- Main -->
+      <main class="flex-grow-1 col-12 mt-4">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h1 class="text-success">Inscripciones</h1>
+            </div>
+          </div>
+          <div class="row mb-4 mx-4">
+            <div class="col-md-6 p-4">
+              <h2 class="text-info mb-4">Requisitos de inscripción:</h2>
+              <ul class="list-group mb-4">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Tener entre 5 y hasta 11 años.
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Tener acompañamiento de la familia durante el ciclo lectivo.
+                </li>
+              </ul>
+              <img src="../assets/imgs/inscripciones.jpg" alt="Foto chicos" class="img-fluid" />
+            </div>
+            <div class="col-md-6 p-4">
+              <div class="d-flex align-items-center">
+                <legend>Para comenzar con el proceso de inscripción deben completar el siguiente formulario:</legend>
+                <img src="../assets/imgs/gc.png" alt="Logo 2" class="img-fluid" style="max-width: 150px" />
+              </div>
+              <form id="inscripcion">
+                <fieldset>
+                  <div class="form-group">
+                    <label for="nombrePadreMadreTutor" class="form-label mt-4">Nombre Padre/Madre o Tutor (*)</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombrePadreMadreTutor"
+                      name="nombrePadreMadreTutor"
+                      placeholder="Nombre y Apellido (Padre/Madre o Tutor)"
+                      pattern="^[A-Za-z,\.]{4,}$"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="nombreAlumno" class="form-label mt-4">Nombre Alumno (*)</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombreAlumno"
+                      name="nombreAlumno"
+                      placeholder="Nombre Alumno"
+                      pattern="^[A-Za-z,\.]{4,}$"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="Email" class="form-label mt-4">Email (*)</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="Email"
+                      name="Email"
+                      aria-describedby="emailHelp"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="telefono" class="form-label mt-4">Número de teléfono (8 dígitos sin el 011) (*)</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefono"
+                      name="telefono"
+                      placeholder="Teléfono"
+                      pattern="\d{8}"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="turno" class="form-label mt-4">Turno</label>
+                    <select class="form-select" id="turno" name="turno" required>
+                      <option value="" disabled selected>Seleccionar turno</option>
+                      <option value="manana">Mañana</option>
+                      <option value="tarde">Tarde</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="mensaje" class="form-label mt-4">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3" style="resize: none"></textarea>
+                  </div>
+                  <button type="submit" id="mostrarMensajeInscripcion" class="btn btn-info mt-4">Enviar</button>
+                </fieldset>
+                <p class="mt-4">(*) campos obligatorios</p>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </main>
+      <!-- Footer -->
+      <footer class="bg-info text-white text-center p-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Información de Contacto</strong></p>
+              <p>Dirección: Manzoni 1360, Gonzalez Catán Provincia de Buenos Aires</p>
+              <p>Teléfono: (54) 5277-0815</p>
+              <p>Email: info@proyectogc.org</p>
+              <a href="https://www.facebook.com/proyectogc.ong" target="_blank">
+                <i class="fab fa-facebook fa-xl" style="color: #ffffff; margin-right: 10px"></i>
+              </a>
+              <a href="https://www.instagram.com/proyecto.gc/" target="_blank">
+                <i class="fab fa-instagram fa-xl" style="color: #ffffff"></i>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <img src="../assets/imgs/gc.png" alt="Logo footer" style="max-height: 150px; width: auto" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/envio-exitoso.js"></script>
   </body>
 </html>
