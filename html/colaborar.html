@@ -109,7 +109,7 @@
                     id="nombre"
                     name="nombre"
                     placeholder="Nombre"
-                    pattern="/^.{3,}$/"
+                    pattern="^[A-Za-z,\.]{4,}$"
                     required
                   />
                 </div>
@@ -141,7 +141,7 @@
                   <label for="mensaje" class="form-label mt-4">Mensaje</label>
                   <textarea class="form-control" id="mensaje" name="mensaje" rows="3" style="resize: none"></textarea>
                 </div>
-                <button type="submit" class="btn btn-success mt-4">Enviar</button>
+                <button type="submit" id="mostrarMensajeColaborar" class="btn btn-success mt-4">Enviar</button>
               </fieldset>
               <p class="mt-4">(*) campos obligatorios</p>
             </form>
@@ -179,5 +179,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/envio-exitoso.js"></script>
   </body>
 </html>
